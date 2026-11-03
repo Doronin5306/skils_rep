@@ -31,5 +31,6 @@ python3 skills/skill-builder/scripts/update_catalog.py
 <!-- skills:start -->
 | Скил | Описание |
 |---|---|
+| [`llm-wiki`](skills/llm-wiki/SKILL.md) | Создаёт и ведёт базу знаний по схеме LLM Wiki Андрея Карпати — Claude сам пишет и поддерживает связанную markdown-вики (Obsidian) из сырых источников - статей,… |
 | [`skill-builder`](skills/skill-builder/SKILL.md) | Создаёт новые скилы для Claude Code и дорабатывает существующие в личном репозитории скилов (/Users/b2b-connect/Doronin/skils_rep) |
 <!-- skills:end -->
