@@ -273,8 +273,9 @@ def main():
     restore = []
     for targets in control_cache:
         r = run_tests(cmd, targets, cwd, env)
-        restore.append({"tests": list(targets) or ["<все>"], "ran": r["ran"],
-                        "red": sorted(r["failed"] | r["error"])})
+        # 0 тестов — не «зелёный»: откат, который ничего не запустил, ничего и не доказал (урок 23.09).
+        red = sorted(r["failed"] | r["error"]) or ([] if r["ran"] else ["не запущено ни одного теста"])
+        restore.append({"tests": list(targets) or ["<все>"], "ran": r["ran"], "red": red})
     for m in mutants:
         if not args.allow_dirty and check_committed(m["path"], cwd):
             restore.append({"tests": [m["path"]], "ran": 0, "red": ["файл не совпадает с HEAD после отката"]})
