@@ -37,5 +37,6 @@ python3 skills/skill-builder/scripts/update_catalog.py
 | [`mutation-check`](skills/mutation-check/SKILL.md) | Тестировщик-замерщик - доказывает каждую правку мутацией |
 | [`skill-builder`](skills/skill-builder/SKILL.md) | Создаёт новые скилы для Claude Code и дорабатывает существующие в личном репозитории скилов (/Users/b2b-connect/Doronin/skils_rep) |
 | [`statusline`](skills/statusline/SKILL.md) | Настраивает строку статуса Claude Code - внизу терминала показываются точный id модели, текущая папка, ветка git, заполненность контекста в процентах и стоимос… |
+| [`tender-parser`](skills/tender-parser/SKILL.md) | Пишет, дорабатывает и чинит парсеры (скрейперы) торговых площадок и госзакупок по общей схеме портфеля - gz_spb, utp_sberbank, rosatom, rts_market, rts_tender,… |
 | [`test-council`](skills/test-council/SKILL.md) | Тестирует код советом из трёх агентов — Оптимист, Реалист, Пессимист — которые независимо гоняют полный набор тестов, пишут новые общие тесты и аргументированн… |
 <!-- skills:end -->
